@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="inner">
+    <div class="print-area">
+      <h1 id="str">test</h1>
+      <div class="image-area">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const url = window.location.href;
+    const file = decodeURI(url);
+    const html_name = file.substring(file.indexOf("print/")+6,file.length , '.html');
+    const file_name = html_name.replace( /.html/g , "" ) ;
+    $('#str').text(file_name);
+    $('.image').css('background-image', 'url(./image/' + file_name + '.png)');
+  </script>
+</body>
+</html>
