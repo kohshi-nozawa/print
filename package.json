@@ -1,0 +1,35 @@
+{
+  "name": "muji",
+  "version": "1.0.0",
+  "description": "N/A",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "csv-parser": "^2.3.0",
+    "csv-writer": "1.2.0",
+    "express": "4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "jsdom": "13.1.0",
+    "opn": "5.4.0",
+    "path": "0.12.7",
+    "puppeteer": "1.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:http": "node http_server.js",
+    "start:gulp": "npx gulp",
+    "lint": "node markuplint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://muji-gscm.backlog.com/git/GSCM_3/muji.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
